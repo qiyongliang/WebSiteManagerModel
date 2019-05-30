@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>登入</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../css/admin.css" media="all">
+</head>
+
+<body>
+
+    <div class="layui-tab" lay-allowClose="true">
+    
+        test
+    </div>
+    <div class="layui-tab" lay-allowClose="true" lay-filter="layadmin-layout-tabs">
+        <ul class="layui-tab-title" id="LAY_app_tabsheader">
+            <li lay-id="component/table.html" lay-attr="component/table.html" class="layui-this"><i
+                    class="layui-icon layui-icon-home"></i></li>
+            <li lay-id="login.html" lay-attr="login.html" class="">
+                <span>选项卡</span>
+            </li>
+            <li lay-id="component/table.html" lay-attr="component/table.html" class="">
+                <span>选项卡22</span>
+            </li>
+        </ul>
+    </div>
+    <div class="layui-body layui-tab-content" id="LAY_app_body">
+        <div class="layadmin-tabsbody-item layui-show">
+            1
+        </div>
+        <div class="layadmin-tabsbody-item">
+            2
+        </div>
+        <div class="layadmin-tabsbody-item">
+            3
+        </div>
+    </div>
+    <script src="../layui/layui.all.js"></script>
+    <script>
+        
+        layui.element.tab({
+        headerElem: '#LAY_app_tabsheader>li' //指定tab头元素项
+        ,bodyElem: '#LAY_app_body>.layadmin-tabsbody-item' //指定tab主体元素项
+      });  
+    </script>
+
+</body>
+
+</html>
